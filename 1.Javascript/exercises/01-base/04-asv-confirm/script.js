@@ -11,4 +11,27 @@
 
 (() => {
     // your code here
+
+let confirmation = false;
+
+while (!confirmation) {
+
+    let age = prompt('Quel age avez-vous?');
+    let sex = prompt('Quel est votre sexe H ou F ?');
+    let location = prompt('Quelle ville habitez-vous');   
+                
+    
+    let confirmationInfo = `Votre age est ${age}, votre sex est ${sex} et votre ville est ${location}, Ces informations sont-elles correctes ?`;
+
+    confirmation = confirm(confirmationInfo);
+
+    if (!confirmation) {
+        alert("Veuillez réintroduire vos informations");
+    }
+
+}
+
+alert('Merci de votre confirmation');
+
+
 })();
