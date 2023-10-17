@@ -14,5 +14,21 @@
 
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+
+        var num = parseFloat(document.getElementById('number').value);
+        function factoriel(num){
+            let i; 
+            let f = 1;
+        
+            for(i = 1; i <= num; i++)  
+            {
+                f = f * i;
+            }  
+          return f;
+        }
+        
+        console.log(factoriel(num));
+        alert(`le factoriel de ${num} est ${factoriel(num)}`);
+
     });
 })();

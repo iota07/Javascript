@@ -14,5 +14,17 @@
 
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+        
+        var numbers = document.getElementById("numbers").value;
+        var textArray = numbers.split(", ");
+        var numberArray = textArray.map(function(item) {
+            return parseFloat(item);
+        });
+        console.log(numberArray);
+        numberArray.sort((a,b)=>a-b);
+        console.log(numberArray);
+        alert(numberArray);
+
+
     });
 })();

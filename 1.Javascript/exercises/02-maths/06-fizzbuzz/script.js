@@ -13,4 +13,28 @@
 
     // your code here
 
+    let i; 
+    let a = 100;
+    let resultArray = [];
+
+    for (i=1;i<=a;i++){
+    if(i%3==0 && i%5==0){
+
+        resultArray.push("fizzbuzz");
+        
+    }else if(i%5==0) {
+        
+        resultArray.push("buzz");
+
+    }else if(i%3==0) {
+        
+        resultArray.push("fizz");
+    }else {
+        resultArray.push(i);
+    }
+};
+console.log (resultArray);  
+
+
+
 })();
