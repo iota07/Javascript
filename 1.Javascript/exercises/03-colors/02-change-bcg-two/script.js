@@ -11,4 +11,7 @@
 
 (() => {
     // your code here
+    document.body.style.backgroundColor = document.getElementById('color').value;
+
+
 })();
