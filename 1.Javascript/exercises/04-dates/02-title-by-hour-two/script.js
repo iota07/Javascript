@@ -12,4 +12,17 @@
 (() => {
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
     // your code here
+
+    const now = new Date();
+
+    const currentHour = now.getHours();
+    const currentMinute = now.getMinutes();
+
+    if (currentHour < 17 || currentHour <= 17 && currentMinute < 30) {
+        document.getElementById('target').innerHTML = "Bonjour";
+    } else {
+        document.getElementById('target').innerHTML = "Bonsoir";
+    }
+
+
 })();
