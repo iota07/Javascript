@@ -25,5 +25,13 @@
         "cerise",
     ];
 
-    // your code here
+    // your code here     
+
+    document.getElementById('run').addEventListener('click', function() {
+        fruits.forEach((element, index) => {
+            console.log(`Valeur ${index} est ${element}`);
+        });
+    });
+
+
 })();
