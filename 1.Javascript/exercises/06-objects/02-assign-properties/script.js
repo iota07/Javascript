@@ -27,4 +27,15 @@
         user: null,
     };
     // your code here
+    document.getElementById('run').addEventListener('click', function(){
+
+            const updatedComputers = computers.map(computer => {
+            const updatedComputer = Object.assign({}, defaultProps, computer);
+            return updatedComputer;
+        });
+        
+        console.log(updatedComputers);
+
+    });
+
 })();
