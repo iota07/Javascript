@@ -11,4 +11,11 @@
 
 (() => {
     // your code here
+    document.getElementsByClassName('target');
+
+    var elements = document.getElementsByClassName('target');
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].innerHTML = 'owned';
+        }
+
 })();
