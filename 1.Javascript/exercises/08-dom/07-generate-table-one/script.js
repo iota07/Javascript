@@ -11,4 +11,18 @@
 
 (() => {
     // your code here
+    let table = document.createElement('table');
+
+    const numRows = 10;
+
+    for (let i = 0; i < numRows; i++) {
+        let row = table.insertRow();
+        let cell1 = row.insertCell();       
+        cell1.innerHTML = `${i + 1}`;
+        
+    }
+
+
+    document.getElementById('target').appendChild(table);
+
 })();

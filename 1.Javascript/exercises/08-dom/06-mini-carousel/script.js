@@ -19,4 +19,12 @@
     ];
 
     // your code here
+    let image = document.querySelector('img[alt="Carousel"]');
+    let button = document.getElementById('next');
+    let currentIndex = 0;
+    button.addEventListener('click', function(){
+        image.src = gallery[currentIndex];
+        currentIndex = (currentIndex + 1) % gallery.length;
+
+    });
 })();
