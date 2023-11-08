@@ -11,7 +11,7 @@
 
 (() => {
     // to get the value of an input: document.getElementById("element-id").value
-
+    
     const performOperation = operation => {
         // perform the operation
 
@@ -47,4 +47,5 @@
             () => (performOperation($btn.id), false),
         ),
     );
+    
 })();

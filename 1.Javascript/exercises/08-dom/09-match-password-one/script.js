@@ -11,4 +11,17 @@
 
 (() => {
     // your code here
+    let buttonscript = document.getElementById('run');
+
+    buttonscript.addEventListener('click', function(){
+        let pwd1 = document.getElementById('pass-one').value;
+        let pwd2 = document.getElementById('pass-two').value;
+        if (pwd1 !== pwd2) {
+            document.getElementById('pass-one').style.border = "2px solid red";
+            document.getElementById('pass-two').style.border = "2px solid red";
+        } else {
+            document.getElementById('pass-one').style.border = "1px solid black";
+            document.getElementById('pass-two').style.border = "1px solid black";
+        }
+    });
 })();

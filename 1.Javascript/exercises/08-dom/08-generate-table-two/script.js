@@ -11,4 +11,24 @@
 
 (() => {
     // your code here
+    let table = "<table border='1'>";
+
+        // Générer les dix premières tables de multiplication
+        for (let i = 1; i <= 10; i++) {
+            table += "<tr>";
+            for (let j = 1; j <= 10; j++) {
+                if (j === 1) {
+                    table += "<td>" + (i * j) + "</td>";
+                } else {
+                    table += "<td>" + (i * j) + "</td>";
+                }
+            }
+            table += "</tr>";
+        }
+
+        table += "</table>";
+
+        // Insérer le tableau dans la balise cible
+        document.getElementById("target").innerHTML = table;
+
 })();
